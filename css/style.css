@@ -17,7 +17,7 @@
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 img {
   display: block;
@@ -159,6 +159,7 @@ nav a,
   padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
 
 }
 
@@ -292,7 +293,7 @@ nav a,
 
 .box a {
   text-decoration: none;
-  display: flex;
+  display: block;
 }
 .box {
   background-color: var(--footer-background);
@@ -305,6 +306,10 @@ nav a,
   font-style: normal;
 }
 
+
+.box-list .address {
+  color: var(--primary-white-color);
+}
 .link:hover,
 .link:focus {
   color: var(--accent-color);
@@ -372,11 +377,14 @@ nav a,
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin: 20px 24px 4px;
+
 }
 .project-type {
   font-size: 16px;
   line-height: 1.87;
   color: var(--primary-text-color);
-  margin: 0px 24px 20px;
+
+}
+.examples-works .project-text {
+      padding: 20px 24px;
 }
